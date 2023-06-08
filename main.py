@@ -29,7 +29,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # experiment
-    parser.add_argument('--exp-path', type=str, default='/notebook/GraN-DAG-master/exp',
+    parser.add_argument('--exp-path', type=str, default='GraN-DAG-test/exp',
                         help='Path to experiments')
     parser.add_argument('--pns', action="store_true",
                         help='Run `pns` function, get /pns folder')
@@ -44,7 +44,7 @@ if __name__ == "__main__":
     parser.add_argument('--random-seed', type=int, default=42, help="Random seed for pytorch and numpy")
 
     # data
-    parser.add_argument('--data-path', type=str, default='/notebook/GraN-DAG-master/data/sachs/continuous',
+    parser.add_argument('--data-path', type=str, default='GraN-DAG-test/data/sachs/continuous',
                         help='Path to data files')
     parser.add_argument('--i-dataset', type=str, default=1,
                         help='dataset index')
